@@ -1,0 +1,17 @@
+<h2>{{s2t.source + " To " + s2t.source + " Migration" }}</h2>
+<div><label>Source:
+    <input [(ngModel)]="s2t.source" placeholder="sourceName"/>
+</label></div>
+<div><label>Target:
+    <input [(ngModel)]="s2t.target" placeholder="targetName"/>
+</label></div>
+
+<ul class = "steps">
+    <li *ngFor = "let step of steps">
+        <span class = "badge">
+            {{step.id}}
+        </span>
+        {{step.name}}
+    </li>
+</ul>
+
